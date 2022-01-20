@@ -30,12 +30,16 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 
 gem "devise_token_auth"
 
+# Gem for payments
+gem "braintree"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console
   gem "pry-rails"
+  gem "dotenv-rails"
 end
 
 group :development do
